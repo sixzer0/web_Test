@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PETHUB</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.addons.css">
+  <link rel="stylesheet" href="./vendors/iconfonts/font-awesome/css/font-awesome.min.css" />
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/yukyeong_style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <style>
+      .example-modal .modal {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        left: auto;
+        display: block;
+        z-index: 1;
+      }
+  
+      .example-modal .modal {
+        background: transparent !important;
+      }
+    </style>
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="navbar-menu-wrapper d-flex align-items-center">
+            <div class="navi font-weight-semibold .display-2">
+                <ul>
+                  <li><img src="img/mainlogo2.png" style="width:80px"></li>
+                  <li ><a href="index.html" style="color:black; font-weight: bold;"><i class="fa fa-home"></i> HOME</a></li>
+                  <li class="drop">
+                    <a href="adopt.html">입양하기 <i class="fa fa-sort-down"></i></a>
+                    <div class="dropdownContain">
+                      <div class="dropOut">
+                        <ul>
+                          <li style="text-align: center"><a href="adopt.html">강아지</a></li>
+                          <li style="text-align: center"><a href="adopt2.html">고양이</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="review.html">입양 후기</a></li>
+                  <li><a href="consulting.html">입양 상담</a></li>
+                  <li class=""><a href="faq.html">FAQ</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="register.html">JOIN US</a></li>
+                  <li><a href="index.html" style="color:black; font-weight: bold;">201434667 - 김유경</a></li>              
+                  <li class="drop">
+                      <a href="#">참고한 템플릿 <i class="fa fa-sort-down"></i></a>
+                      <div class="dropdownContain">
+                        <div class="dropOut">
+                          <ul>
+                            <li><a href="https://www.bootstrapdash.com/product/star-admin-bootstrap-free-template/">Star-admin</a></li>
+                            <li><a href="https://github.com/BootstrapDash/StarAdmin-Free-Bootstrap-Admin-Template?">GIT-HUB</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <div class="nav-link">
+              <div class="user-wrapper">
+                <div class="">
+                    <img src="img/mainlogo.png" style="width:200px" alt="profile image">
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="adopt.html">
+                  <i class="menu-icon fa fa-paw"></i>
+                <span class="menu-title ">강아지</span>
+              </a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="menu-icon fa fa-paw"></i>
+                <span class="menu-title font-weight-semibold" style="color:rgb(84, 167, 235);"> 고양이</span>
+                <i class="menu-arrow"></i>
+              </a>
+
+            </li>
+
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row purchace-popup">
+            <div class="col-12">
+              <span class="d-flex alifn-items-center">
+                <h5>고양이는 강아지에 비해 독립적이기 때문에 강아지에 비해 키우기 수월할거에요</h5>
+                <i class="mdi mdi-close popup-dismiss"></i>
+              </span>
+            </div>
+          </div>
+          <div class="row">
+              <!-- 강아지1 -->
+              <div class="col-lg-2 grid-margin stretch-card">
+                <div class="card card-statistics">
+                  <div class="card-body">          
+                      <a href="#"><img src="img/cat4.svg"></a>
+                      <button type="button" class="btn btn-default btn-block btn-inverse-secondary" data-toggle="modal" data-target="#modal-default">
+                          입양완료
+                        </button>
+                        
+                  </div>
+                </div>
+              </div>
+              <!-- 강아지2 -->
+              <div class="col-lg-2 grid-margin stretch-card">
+                  <div class="card card-statistics">
+                    <div class="card-body">          
+                        <a href="#"><img src="img/cat5.svg"></a>
+                        <button type="button" class="btn btn-default btn-block btn-inverse-secondary" data-toggle="modal" data-target="#modal-default">
+                            입양완료
+                          </button>
+                    </div>
+                  </div>
+                </div>
+                              <!-- 강아지3 -->
+              <div class="col-lg-2 grid-margin stretch-card">
+                  <div class="card card-statistics">
+                    <div class="card-body">          
+                        <a href="#"><img src="img/cat6.svg"></a>
+                        <button type="button" class="btn btn-default btn-block btn-inverse-secondary" data-toggle="modal" data-target="#modal-default">
+                            입양완료
+                          </button>
+                    </div>
+                  </div>
+                </div>
+                              <!-- 강아지4 -->
+              <div class="col-lg-2 grid-margin stretch-card">
+                  <div class="card card-statistics">
+                    <div class="card-body">          
+                        <a href="#"><img src="img/cat8.svg"></a>
+                        <button type="button" class="btn btn-default btn-block btn-inverse-secondary" data-toggle="modal" data-target="#modal-default">
+                            입양완료
+                          </button>
+                    </div>
+                  </div>
+                </div>
+                                              <!-- 강아지4 -->
+              <div class="col-lg-2 grid-margin stretch-card">
+                  <div class="card card-statistics">
+                    <div class="card-body">          
+                        <a href="#"><img src="img/cat.svg"></a>
+                        <button type="button" class="btn btn-default btn-block btn-inverse-secondary" data-toggle="modal" data-target="#modal-default">
+                            입양완료
+                          </button>
+                    </div>
+                  </div>
+                </div>
+                                              <!-- 강아지4 -->
+              <div class="col-lg-2 grid-margin stretch-card">
+                  <div class="card card-statistics">
+                    <div class="card-body">          
+                        <a href="#"><img src="img/cat9.svg"></a>
+                        <button type="button" class="btn btn-default btn-block btn-inverse-secondary" data-toggle="modal" data-target="#modal-default">
+                            입양완료
+                          </button>
+                    </div>
+                  </div>
+                </div>
+      
+            </div>
+            <div class="row">
+                <!-- 강아지1 -->
+                <div class="col-lg-2 grid-margin stretch-card">
+                  <div class="card card-statistics">
+                    <div class="card-body">          
+                        <a href="#"><img src="img/cat10.svg"></a>
+                        <Br />
+                        <div class="panel-footer" style="background:white; margin-bottom:6px; border-radius: 0px;">
+                            <p class="text-center"><b>견종</b> : 잡종 <br />
+                            <b>성별</b> : 암컷 <br />
+                            <b>나이</b> : 3개월 추정<br />
+                            <b>지역</b> : 오산<br />
+
+                          </p>
+                        </div>
+                        <button type="button" class="btn btn-default" onclick="window.open('depage/cat1.html');" >
+                            사진보기
+                          </button>
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-success">
+                              입양
+                            </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 grid-margin stretch-card">
+                  <div class="card card-statistics">
+                    <div class="card-body">          
+                        <a href="#"><img src="img/cat.svg"></a>
+                        <Br />
+                        <div class="panel-footer" style="background:white; margin-bottom:6px; border-radius: 0px;">
+                            <p class="text-center"><b>견종</b> : 말티즈 <br />
+                            <b>성별</b> : 수컷 <br />
+                            <b>나이</b> : 4개월 추정<br />
+                            <b>지역</b> : 서산<br />
+
+                          </p>
+                        </div>
+                        <button type="button" class="btn btn-default" onclick="window.open('depage/cat1.html');" >
+                            사진보기
+                          </button>
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-success">
+                              입양
+                            </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 grid-margin stretch-card">
+                  <div class="card card-statistics">
+                    <div class="card-body">          
+                        <a href="#"><img src="img/cat4.svg"></a>
+                        <Br />
+                        <div class="panel-footer" style="background:white; margin-bottom:6px; border-radius: 0px;">
+                            <p class="text-center"><b>견종</b> : 시바 <br />
+                            <b>성별</b> : 암컷 <br />
+                            <b>나이</b> : 14개월 추정<br />
+                            <b>지역</b> : 마산<br />
+
+                          </p>
+                        </div>
+                        <button type="button" class="btn btn-default" onclick="window.open('depage/cat1.html');" >
+                            사진보기
+                          </button>
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-success">
+                              입양
+                            </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 grid-margin stretch-card">
+                  <div class="card card-statistics">
+                    <div class="card-body">          
+                        <a href="#"><img src="img/cat11.svg"></a>
+                        <Br />
+                        <div class="panel-footer" style="background:white; margin-bottom:6px; border-radius: 0px;">
+                            <p class="text-center"><b>견종</b> : 불독 <br />
+                            <b>성별</b> : 암컷 <br />
+                            <b>나이</b> : 10개월 추정<br />
+                            <b>지역</b> : 가산<br />
+
+                          </p>
+                        </div>
+                        <button type="button" class="btn btn-default" onclick="window.open('depage/cat1.html');" >
+                            사진보기
+                          </button>
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-success">
+                              입양
+                            </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 grid-margin stretch-card">
+                  <div class="card card-statistics">
+                    <div class="card-body">          
+                        <a href="#"><img src="img/dog8.svg"></a>
+                        <Br />
+                        <div class="panel-footer" style="background:white; margin-bottom:6px; border-radius: 0px;">
+                            <p class="text-center"><b>견종</b> : 시베리안 <br />
+                            <b>성별</b> : 수컷 <br />
+                            <b>나이</b> : 4개월 추정<br />
+                            <b>지역</b> : 산성<br />
+
+                          </p>
+                        </div>
+                        <button type="button" class="btn btn-default" onclick="window.open('depage/cat1.html');" >
+                            사진보기
+                          </button>
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-success">
+                              입양
+                            </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 grid-margin stretch-card">
+                  <div class="card card-statistics">
+                    <div class="card-body">          
+                        <a href="#"><img src="img/dog5.svg"></a>
+                        <Br />
+                        <div class="panel-footer" style="background:white; margin-bottom:6px; border-radius: 0px;">
+                            <p class="text-center"><b>견종</b> : 진돗개 <br />
+                            <b>성별</b> : 수컷 <br />
+                            <b>나이</b> : 3개월 추정<br />
+                            <b>지역</b> : 오산<br />
+
+                          </p>
+                        </div>
+                        <button type="button" class="btn btn-default" onclick="window.open('depage/cat1.html');" >
+                            사진보기
+                          </button>
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-success">
+                              입양
+                            </button>
+                    </div>
+                  </div>
+                </div>
+  
+        
+              </div>
+
+              <div class="modal fade" id="modal-default">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">입양 불가능 <i class="fa fa-smile-o"></i></h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>해당 펫은 이미 가족을 찾아 입양이 불가능합니다.<BR/> 가족을 찾는 펫들이 많이 있으니 너무 슬퍼마셔요 :)
+
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">OK</button>
+                      </div>
+                    </div>
+                    <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <div class="modal modal-success fade" id="modal-success">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">입양하시겠습니까? <i class="fa fa-heart"></i></h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>입양 주의사항을 꼭 확인해주세요.<Br />한 번 입양하면 파양 절대 금지! 버리면 완전 벌받을거에요!</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">더 생각해볼게요</button>
+                          <button type="button" class="btn btn-outline btn-primary">입양할래요</button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                  </div>
+                  <!-- /.modal -->
+
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
+              <div class="card card-statistics">
+                <div class="card-body">
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018
+              <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with
+              <i class="mdi mdi-heart text-danger"></i>
+            </span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <script src="vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
